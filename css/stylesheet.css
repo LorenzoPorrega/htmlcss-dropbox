@@ -26,12 +26,17 @@ section{
 }
 
 h1{
-    font-size: calc(var(--default-font-size) + 2.5rem);
+    font-size: calc(var(--default-font-size) + 2rem);
     font-weight: 800;
 }
 
+h2{
+    font-size: calc(var(--default-font-size) + 0.5rem);
+
+}
+
 .container{
-    width: 1280px;
+    width: 980px;
 }
 
 .button{
@@ -39,7 +44,11 @@ h1{
     background-color: var(--primary-color);
 }
 
-.button:hover{
+.button:hover span{
+    text-decoration: underline;
+}
+
+.button:hover, i:hover{
     cursor: pointer;
 }
 
@@ -113,41 +122,70 @@ header{
     
 }
 
+.jumbo i{
+    font-size: var(--default-font-size);
+    align-self: flex-start;
+    justify-self: flex-end;
+    margin-bottom: 0;
+}
+
+.jumbo-container{
+    flex-direction: column;
+    width: 1175px;
+}
+
 .jumbo-bottom{
-    margin-top: 30px;
+    margin-top: 50px;
+    align-self: flex-end;
 }
 
 .jumbo-text-box{
     width: 30%;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 1.75rem;
+}
+
+.jumbo-bottom p{
+    line-height: 22.5px;
+}
+
+.jumbo-text-box .button{
+    width: 205px;
+    padding: 10px;
+}
+
+.jumbo-text-box i{
+    padding-top: 10px;
 }
 
 .jumbo-image-container{
     width: 70%;
-}
-
-.jumbo button span{
-    text-align: center;
-
-}
-
-.jumbo span{
-    
-}
-
-.jumbo i{
-    font-size: var(--default-font-size);
-    align-self: flex-start;
-    justify-self: flex-end;
+    position: relative;
 }
 
 .jumbo-img{
     object-fit: contain;
-    width: 500px;
-    height: 250px;
+    height: 450px;
+    position: absolute;
+    bottom: -20px;
+    top: 0px;
 }
 
-.jumbo-text-box span, .button, i{
-    margin: 20px 0px;
+/* ----- MAIN - SEZIONI ----- */
+
+.business-plans{
+    margin-top: 150px;
+    justify-content: center;
+}
+
+.container-business{
+
+}
+
+.busines-title{
+    
+}
+
+.busines-title:first-of-type div span{
+    margin: 0px 20px;
 }
