@@ -20,6 +20,7 @@
 
 section{
     height: 720px;
+    width: 100%;
     padding-top: var(--default-space);
     padding-bottom: var(--default-space);
 }
@@ -46,12 +47,17 @@ h1{
 
 /* ----- NAV BAR ----- */
 header{
+    position: relative;
 }
 
 .nav-bar{
     height: 75px;
+    width: 100%;
     justify-content: space-between;
+    background-color: white;
     box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.2);
+    position: fixed;
+    z-index: 3;
 }
 
 .nav-section{
@@ -100,26 +106,32 @@ header{
 /* ----- SEZIONE JUMBO ------*/
 .jumbo{
     background-color: var(--primary-color-light);
+    margin-top: 75px;
     padding-bottom: 0px;
     justify-content: center;
-    align-items: flex-end;
+    align-self: flex-end;
+    
 }
 
 .jumbo-bottom{
-    flex-direction: row;
-    overflow: hidden;
+    
+}
+
+.jumbo-text-box{
+    width: 20%;
 }
 
 .jumbo-image-container{
-    width: 70%;
+    width: 80%;
 }
+
 
 .jumbo-img{
     object-fit: contain;
     width: 500px;
-    height: 500px;
+    height: 250px;
 }
 
-.jumbo-bottom div{
-    width: 50%;
+.jumbo-text-box span, .button, i{
+    margin: 20px 0px;
 }
