@@ -114,17 +114,33 @@ header{
 }
 
 .jumbo-bottom{
-    
+    margin-top: 30px;
 }
 
 .jumbo-text-box{
-    width: 20%;
+    width: 30%;
+    flex-direction: column;
+    gap: 0.2rem;
 }
 
 .jumbo-image-container{
-    width: 80%;
+    width: 70%;
 }
 
+.jumbo button span{
+    text-align: center;
+
+}
+
+.jumbo span{
+    
+}
+
+.jumbo i{
+    font-size: var(--default-font-size);
+    align-self: flex-start;
+    justify-self: flex-end;
+}
 
 .jumbo-img{
     object-fit: contain;
