@@ -170,9 +170,12 @@ header{
     top: 0px;
 }
 
+
 /* ----- MAIN - SECTIONS ----- */
 
+
 /* ----- BUSINESS PLANS SECTION -----*/
+
 .business-plans{
     margin-top: 150px;
     justify-content: center;
@@ -282,4 +285,11 @@ header{
 
 #button-container{
     justify-content: center;
+}
+
+/* ----- CONTACT FORM ----- */
+
+.contact img{
+    width: 200px;
+    height: 200px;
 }
