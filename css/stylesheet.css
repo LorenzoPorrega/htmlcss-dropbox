@@ -42,6 +42,9 @@ h2{
 .button{
     color: white;
     background-color: var(--primary-color);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
 }
 
 .button:hover span{
@@ -103,15 +106,6 @@ header{
     text-decoration: underline grey;
 }
 
-.nav-bar .button{
-    width: 75px;
-    height: 35px;
-    text-align: center;
-    line-height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
 /* ----- SEZIONE JUMBO ------*/
 .jumbo{
     background-color: var(--primary-color-light);
@@ -149,11 +143,6 @@ header{
     line-height: 22.5px;
 }
 
-.jumbo-text-box .button{
-    width: 205px;
-    padding: 10px;
-}
-
 .jumbo-text-box i{
     padding-top: 10px;
 }
@@ -165,7 +154,7 @@ header{
 
 .jumbo-img{
     object-fit: contain;
-    height: 450px;
+    height: 500px;
     position: absolute;
     bottom: -20px;
     top: 0px;
@@ -173,19 +162,17 @@ header{
 
 /* ----- MAIN - SEZIONI ----- */
 
+/* ----- SEZIONE BUSINESS PLANS -----*/
 .business-plans{
     margin-top: 150px;
     justify-content: center;
 }
 
-.container-business{
-
+.fatturazione{
+    padding: 75px 0px;
 }
 
-.busines-title{
-    
-}
-
-.busines-title:first-of-type div span{
-    margin: 0px 20px;
+.radio{
+    margin-right: 100px;
+    padding-left: 5px;
 }
