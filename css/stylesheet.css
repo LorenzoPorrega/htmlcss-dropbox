@@ -61,7 +61,7 @@ h3{
     text-decoration: underline;
 }
 
-.button:hover, i:hover{
+.button:hover, .hoverable-icon:hover{
     cursor: pointer;
 }
 
