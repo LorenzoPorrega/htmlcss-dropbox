@@ -352,3 +352,13 @@ header{
 
 /* ----- DROPBOX USERS COUNT SECTION ----- */
 
+.user-count *{
+    justify-self: flex-start;
+}
+
+.user-count h2{
+    display: block;
+    max-width: 70%;
+}
+
+/* ----- PARTNERS SECTION ----- */
