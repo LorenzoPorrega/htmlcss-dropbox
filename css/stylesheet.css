@@ -3,7 +3,7 @@
 :root{
     --primary-color: rgb(0, 97, 255);
     --primary-color-light: rgb(180, 208, 231);
-    --default-space: 125px;
+    --default-space: 75px;
     --default-font-size: 2.5rem;
     --border-color: rgb(208, 208, 211);
     --bottom-over-color: rgb(2, 57, 146);
@@ -18,13 +18,15 @@
 
 .flex{
     display: flex;
+    justify-content: center;
 }
 
 section{
-    height: 720px;
     width: 100%;
     padding-top: var(--default-space);
     padding-bottom: var(--default-space);
+    display: flex;
+    justify-content: center;
 }
 
 h1{
@@ -33,7 +35,8 @@ h1{
 }
 
 h2{
-    font-size: calc(var(--default-font-size) + 0.5rem);
+    font-size: calc(var(--default-font-size) + 0.25rem);
+    margin-bottom: 5rem;
 }
 
 h3{
@@ -42,7 +45,7 @@ h3{
 }
 
 .container{
-    width: 980px;
+    max-width: 980px;
 }
 
 .button{
@@ -177,12 +180,11 @@ header{
 /* ----- BUSINESS PLANS SECTION -----*/
 
 .business-plans{
-    margin-top: 150px;
-    justify-content: center;
+    margin-top: 250px;
 }
 
 .fatturazione{
-    padding: 75px 0px;
+    padding-bottom: 50px;
 }
 
 .radio{
@@ -273,11 +275,10 @@ header{
 .col-bottom .card-body{
     border: 1px solid var(--border-color);
     border-top: 0px;
-    padding: 20px;
+    padding: 0px 20px;
     line-height: 20px;
     font-size: 0.9rem;
 }
-
 
 .col-bottom .plan-features{
     margin-top: 50px;
@@ -285,11 +286,69 @@ header{
 
 #button-container{
     justify-content: center;
+    padding: 20px;
+}
+
+.button-container .button{
+    width: 100%;
+    height: 100%;
+    align-self: flex-start;
 }
 
 /* ----- CONTACT FORM ----- */
 
-.contact img{
-    width: 200px;
-    height: 200px;
+.contact-img img{
+    object-fit: contain;
+    max-width: 100%;
 }
+
+.contact-text{
+    width: 100%;
+    padding: 40px;
+    line-height: 25px;
+}
+
+.contact-text h3{
+    font-size: 1.75rem;
+    padding-bottom: 30px;
+    line-height: 35px;
+}
+
+.contact-text p{
+    font-size: 1rem;
+}
+
+.contact-text .button{
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* ----- DROPBOX BUSINESS FEATURES ----- */
+
+.business-features{
+    flex-flow: row wrap;
+    flex-basis: 33.3%;
+}
+
+.business-features h3{
+    padding-bottom: 2rem;
+}
+
+.business-col{
+    flex-basis: 33.3%;
+    padding: 0rem 1rem;
+}
+
+.business-card{
+    padding: 3.5rem 0rem 3.5rem 0rem;
+}
+
+.business-features img{
+    width: 100%;
+}
+
+/* ----- DROPBOX USERS COUNT SECTION ----- */
+
