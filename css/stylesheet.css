@@ -526,6 +526,12 @@ footer{
     align-items: flex-start;
 }
 
+.site-map ul li:first-of-type{
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
 footer h3{
     font-size: calc(var(--default-font-size) - 0.75rem);
     padding-bottom: 1.25rem;
