@@ -5,6 +5,8 @@
     --primary-color-light: rgb(180, 208, 231);
     --default-space: 125px;
     --default-font-size: 2.5rem;
+    --border-color: rgb(208, 208, 211);
+    --bottom-over-color: rgb(2, 57, 146);
 }
 
 *{
@@ -32,7 +34,11 @@ h1{
 
 h2{
     font-size: calc(var(--default-font-size) + 0.5rem);
+}
 
+h3{
+    padding-bottom: 10px;
+    font-size: 1.25rem;
 }
 
 .container{
@@ -47,6 +53,10 @@ h2{
     padding: 10px;
 }
 
+.button:hover{
+    background-color: var(--bottom-over-color);
+}   
+
 .button:hover span{
     text-decoration: underline;
 }
@@ -57,7 +67,7 @@ h2{
 
 /* ----- HEADER ----- */
 
-/* ----- NAV BAR ----- */
+/* ----- NAVIGATION BAR ----- */
 header{
     position: relative;
 }
@@ -106,7 +116,7 @@ header{
     text-decoration: underline grey;
 }
 
-/* ----- SEZIONE JUMBO ------*/
+/* ----- JUMBO SECTION ------*/
 .jumbo{
     background-color: var(--primary-color-light);
     margin-top: 75px;
@@ -160,9 +170,9 @@ header{
     top: 0px;
 }
 
-/* ----- MAIN - SEZIONI ----- */
+/* ----- MAIN - SECTIONS ----- */
 
-/* ----- SEZIONE BUSINESS PLANS -----*/
+/* ----- BUSINESS PLANS SECTION -----*/
 .business-plans{
     margin-top: 150px;
     justify-content: center;
@@ -175,4 +185,101 @@ header{
 .radio{
     margin-right: 100px;
     padding-left: 5px;
+}
+
+/* ----- BUSINESS PLANS CONTAINER ----- */
+.business-plans-container{
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.business-plans-container .card-title{
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+}
+
+.business-plans-container i{
+    padding-right: 10px;
+    padding: 5px;
+}
+
+.business-plans-container .col{
+    /*Flex basis 0 da la larghezza delle colonne 0
+    sarò poi flex grow a dare loro una larghezza 
+    partendo dalla dimensione minima, ossia 0*/
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.business-plans-container .card-body{
+    border: 1px solid var(--border-color);
+    border-top: 0px;
+    padding: 20px;
+    line-height: 20px;
+    font-size: .9rem;
+}
+
+.business-plans-container .card-body a{
+    text-decoration: underline;
+    color: rgb(0, 0, 238);
+}
+
+.business-plans-container .card-body a:hover{
+    cursor: pointer;
+}
+
+.plan-frequency{
+    color: grey;
+}
+
+.card-body > div{
+    margin: 35px 0px;
+}
+
+.plan-features{
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.business-plans-container hr{
+    max-width: 20%;
+    height: 1px;
+}
+
+.fa-check{
+    color: rgb(66, 109, 255);
+}
+
+/* ----- BOTTOM COLUMN ------ */
+.col-bottom{
+    margin-top: 50px;
+}
+
+.col-bottom .card-title{
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+}
+
+.col-bottom i{
+    padding-right: 10px;
+    padding: 5px;
+}
+
+.col-bottom .card-body{
+    border: 1px solid var(--border-color);
+    border-top: 0px;
+    padding: 20px;
+    line-height: 20px;
+    font-size: 0.9rem;
+}
+
+
+.col-bottom .plan-features{
+    margin-top: 50px;
+}
+
+#button-container{
+    justify-content: center;
 }
