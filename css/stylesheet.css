@@ -183,7 +183,7 @@ header{
 }
 
 .jumbo-text-box i{
-    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 .jumbo-image-container{
@@ -206,7 +206,7 @@ header{
 /* ----- BUSINESS PLANS SECTION -----*/
 
 .business-plans{
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
 .fatturazione{
@@ -505,8 +505,18 @@ header{
 
 /* ----- FAQ ----- */
 
+.faq{
+    height: 700px;
+}
+
 .accordion{
     width: 980px;
+}
+
+.faq-box{
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: wrap;
 }
 
 .question{
@@ -517,6 +527,7 @@ header{
     align-items: center;
     flex-flow: wrap;
     transition: 10s;
+    width: 100%;
 }
 
 .question span{
@@ -528,9 +539,11 @@ header{
 }
 
 .hidden-reply{
-    display: none;
-    margin: 20px 0px 40px;
     color: grey;
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 .accordion span{
@@ -549,6 +562,11 @@ header{
 
 .question:hover .hidden-reply{
     display: block;
+    margin: 20px 0px 40px;
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    padding-left: 10px;
 }
 
 .question:hover .question i{
