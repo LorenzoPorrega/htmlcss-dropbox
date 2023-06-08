@@ -505,6 +505,56 @@ header{
 
 /* ----- FAQ ----- */
 
+.accordion{
+    width: 980px;
+}
+
+.question{
+    border: 1px solid var(--border-color) ;
+    border-left: none;
+    border-right: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    transition: 10s;
+}
+
+.question span{
+    width: 90%;
+}
+
+.question.middle{
+    border: none;
+}
+
+.hidden-reply{
+    display: none;
+    margin: 20px 0px 40px;
+    color: grey;
+}
+
+.accordion span{
+    padding-bottom: 0;
+    margin: 30px 0px;
+}
+
+.accordion i{
+    margin-right: 20px;
+    transform: rotate(180deg);
+}
+
+.accordion i:hover{
+    cursor: pointer;
+}
+
+.question:hover .hidden-reply{
+    display: block;
+}
+
+.question:hover .question i{
+    transform: rotate(180deg);
+}
+
 /* ----- FOOTER ----- */
 
 footer{
@@ -530,6 +580,11 @@ footer{
     font-weight: 600;
     font-size: 1.5rem;
     padding-bottom: 20px;
+}
+
+.site-map ul li:first-of-type:hover{
+    cursor: auto;
+    text-decoration: none;
 }
 
 footer h3{
